@@ -1,6 +1,6 @@
 
 
-<h1>Evercício 2</h1>
+<h1>Exercício 2</h1>
 
 <h2>Proposta:</h2>
 
