@@ -14,23 +14,16 @@ public class Program {
 
 		Student student = new Student();
 		System.out.print("Name: ");
-		student.name = sc.nextLine();
+		student.setName(sc.nextLine());
 		System.out.println("Your Grades: ");
 		System.out.print("Grade 1: ");
-		student.n1 = sc.nextDouble();
+		student.setGrade1(sc.nextDouble());
 		System.out.print("Grade 2: ");
-		student.n2 = sc.nextDouble();
+		student.setGrade2(sc.nextDouble());
 		System.out.print("Grade 3: ");
-		student.n3 = sc.nextDouble();
+		student.setGrade3(sc.nextDouble());
 
-		System.out.printf("FINAL GRADE: %.2f%n", student.finalGrade());
-
-		if (student.result() == true) {
-			System.out.println("PASS");
-		} else {
-			System.out.printf("FAILED /n MISSING %.2f POINTS%n", student.missingpoints());
-		}
-
+		System.out.printf(student.toString());
 		sc.close();
 	}
 }
